@@ -2,192 +2,318 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SnapRetro Privacy Policy</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy · SnapRetro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet" />
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background-color: #0f172a;
-      color: #e5e7eb;
+    * {
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      box-sizing: border-box;
     }
 
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
+    body {
+      background: #f4f6fa;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .policy-card {
+      max-width: 880px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 32px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.03), 0 4px 12px rgba(0, 0, 0, 0.02);
+      padding: 2.8rem 2.5rem;
+      transition: all 0.2s;
+    }
+
+    @media (max-width: 600px) {
+      .policy-card {
+        padding: 1.8rem 1.2rem;
+        border-radius: 24px;
+      }
     }
 
     h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-      color: #ffffff;
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .subhead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      border-bottom: 1px solid #e9edf2;
+      padding-bottom: 1.2rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .subhead .date-badge {
+      background: #f1f5f9;
+      padding: 0.25rem 1rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #334155;
+    }
+
+    .subhead .tag {
+      background: #eef2ff;
+      color: #1e4b8f;
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 0.25rem 0.9rem;
+      border-radius: 40px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
     }
 
     h2 {
-      margin-top: 30px;
-      color: #f9fafb;
-      font-size: 20px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 2rem 0 0.6rem 0;
+      color: #0f172a;
+      border-left: 4px solid #3b82f6;
+      padding-left: 0.9rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 1.6rem 0 0.4rem 0;
+      color: #1e293b;
     }
 
     p {
-      margin: 10px 0;
-      color: #d1d5db;
+      margin: 0.8rem 0;
+      color: #1e293b;
     }
 
-    ul {
-      padding-left: 20px;
+    strong {
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    ul,
+    ol {
+      margin: 0.6rem 0 1rem 1.5rem;
     }
 
     li {
-      margin-bottom: 8px;
+      margin: 0.3rem 0;
     }
 
-    .card {
-      background: #111827;
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 20px;
-      border: 1px solid #1f2933;
+    .highlight-box {
+      background: #f8fafc;
+      border-radius: 18px;
+      padding: 1.2rem 1.6rem;
+      margin: 1.2rem 0;
+      border: 1px solid #e9edf2;
     }
 
-    .highlight {
-      color: #22c55e;
-      font-weight: 500;
+    .highlight-box strong {
+      color: #0f172a;
     }
 
-    .footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #9ca3af;
-      text-align: center;
+    .emoji-bullet {
+      list-style: none;
+      padding-left: 0;
     }
 
-    .email {
-      color: #60a5fa;
+    .emoji-bullet li {
+      display: flex;
+      gap: 0.6rem;
+      align-items: flex-start;
+      padding: 0.3rem 0;
+    }
+
+    .emoji-bullet li::before {
+      content: "•";
+      color: #3b82f6;
+      font-weight: 700;
+      margin-right: 0.3rem;
+    }
+
+    .permission-pill {
+      background: #f1f5f9;
+      padding: 0.1rem 0.8rem;
+      border-radius: 40px;
+      font-family: 'Menlo', 'Monaco', 'Cascadia Code', monospace;
+      font-size: 0.8rem;
+      color: #1e293b;
+      display: inline-block;
+    }
+
+    .divider {
+      border: 0;
+      height: 1px;
+      background: #e2e8f0;
+      margin: 2rem 0;
+    }
+
+    .contact-box {
+      background: #f8fafc;
+      padding: 1.2rem 1.6rem;
+      border-radius: 20px;
+      border: 1px solid #e9edf2;
+      margin: 1.5rem 0 0.5rem 0;
+    }
+
+    .contact-box a {
+      color: #2563eb;
       text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px dotted #b9d0f0;
     }
 
-    .email:hover {
-      text-decoration: underline;
+    .contact-box a:hover {
+      color: #1d4ed8;
+      border-bottom: 1px solid #2563eb;
     }
 
-    .summary {
-      background: #020617;
-      border: 1px solid #1e293b;
-      padding: 15px;
-      border-radius: 10px;
-      margin-top: 30px;
+    .footer-note {
+      margin-top: 2.8rem;
+      font-size: 0.9rem;
+      color: #64748b;
+      text-align: center;
+      border-top: 1px solid #e9edf2;
+      padding-top: 1.8rem;
+    }
+
+    .footer-note span {
+      font-weight: 500;
+      color: #1e293b;
+    }
+
+    .summary-box {
+      background: #f0fdf4;
+      border-left: 4px solid #22c55e;
+      padding: 1rem 1.6rem;
+      border-radius: 16px;
+      margin: 1.8rem 0 0.5rem 0;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.7rem;
+      }
+      .policy-card {
+        padding: 1.5rem 1rem;
+      }
     }
   </style>
 </head>
-
 <body>
-  <div class="container">
+  <div class="policy-card">
 
-    <h1>Privacy Policy for SnapRetro</h1>
-    <div class="card">
-      <h2>📌 Overview</h2>
-      <p>
-        SnapRetro is a photo editing application that allows applying filters, effects,
-        textures, and templates to photos. The app follows a 
-        <span class="highlight">privacy-first approach</span>, meaning all data stays on the device.
-      </p>
+    <h1>📸 Privacy Policy</h1>
+    <div class="subhead">
+      <span class="date-badge">📅 Last updated: July 2026</span>
+      <span class="tag">🔒 privacy-first · local only</span>
     </div>
 
-    <div class="card">
-      <h2>📷 Information</h2>
+    <p><strong>SnapRetro</strong> respects your privacy and is committed to protecting it. This Privacy Policy explains how the mobile application <strong>SnapRetro</strong> handles your information.</p>
 
-      <h3>Photos and Media</h3>
-      <ul>
-        <li>No collection or storage of photos</li>
-        <li>No uploading of images</li>
-        <li>All processing happens locally on the device</li>
-      </ul>
+    <!-- Overview -->
+    <h2>📌 Overview</h2>
+    <p>SnapRetro is a photo editing application that allows users to apply filters, effects, textures, and templates to their photos. The app is designed with a <strong>privacy-first approach</strong>, meaning your data stays on your device.</p>
 
-      <h3>Permissions</h3>
-      <ul>
-        <li><strong>Photos / Media Access</strong> – used to import and save images</li>
-      </ul>
+    <!-- Information we collect -->
+    <h2>📷 Information We Collect</h2>
+
+    <h3>1. Photos and Media (User-Provided Content)</h3>
+    <p>SnapRetro may access photos stored on your device <strong>only when you choose to import or save images</strong>.</p>
+    <ul>
+      <li>No collection, storage, or uploading of your photos</li>
+      <li>All image processing happens <strong>locally on your device</strong></li>
+    </ul>
+
+    <h3>2. Device Permissions</h3>
+    <p>SnapRetro may request the following permission:</p>
+    <ul>
+      <li><strong>Photos / Media Access</strong>
+        <ul>
+          <li>Used to import images for editing</li>
+          <li>Used to save edited images to your gallery</li>
+        </ul>
+      </li>
+    </ul>
+    <p>Access to media happens only with your explicit action.</p>
+
+    <!-- How info is used -->
+    <h2>🔐 How Information Is Used</h2>
+    <p>No personal data is collected.</p>
+    <p>Access to photos is strictly limited to:</p>
+    <ul>
+      <li>Editing images within the app</li>
+      <li>Saving processed images back to your device</li>
+    </ul>
+
+    <!-- Data sharing -->
+    <h2>🚫 Data Sharing</h2>
+    <p>No user data is shared, sold, or transferred to third parties.</p>
+    <ul>
+      <li>No analytics tracking</li>
+      <li>No advertising SDKs</li>
+      <li>No external servers involved</li>
+    </ul>
+
+    <!-- Data storage -->
+    <h2>🔒 Data Storage</h2>
+    <p>All data is processed and stored <strong>locally on your device only</strong>.</p>
+    <p>The app does not:</p>
+    <ul>
+      <li>Store data on servers</li>
+      <li>Upload images</li>
+      <li>Track user activity</li>
+    </ul>
+
+    <!-- Children -->
+    <h2>👶 Children's Privacy</h2>
+    <p>SnapRetro does not knowingly collect any personal information from children under the age of 13.</p>
+    <p>Since no data is collected, the app is suitable for general audiences.</p>
+
+    <!-- Third party -->
+    <h2>🌍 Third-Party Services</h2>
+    <p>SnapRetro does not integrate third-party services that collect user data.</p>
+
+    <!-- Changes -->
+    <h2>🔄 Changes to This Privacy Policy</h2>
+    <p>This Privacy Policy may be updated from time to time. Any changes will be reflected on this page with an updated date.</p>
+
+    <!-- Contact -->
+    <h2>📩 Contact</h2>
+    <div class="contact-box">
+      <p style="margin: 0;">For any questions or concerns about this Privacy Policy:</p>
+      <p style="margin: 0.5rem 0 0 0;"><strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></p>
     </div>
 
-    <div class="card">
-      <h2>🔐 Usage</h2>
-      <p>No personal data is collected.</p>
-      <ul>
-        <li>Editing images within the app</li>
-        <li>Saving processed images to the device</li>
-      </ul>
+    <!-- Consent -->
+    <h2>✅ Consent</h2>
+    <p>By using SnapRetro, you agree to this Privacy Policy.</p>
+
+    <!-- Summary -->
+    <div class="summary-box">
+      <p style="margin: 0; font-weight: 500;">📌 <strong>Summary:</strong> SnapRetro does not collect or store personal data. Everything stays on your device.</p>
     </div>
 
-    <div class="card">
-      <h2>🚫 Data Sharing</h2>
-      <ul>
-        <li>No data shared with third parties</li>
-        <li>No analytics tracking</li>
-        <li>No advertising SDKs</li>
-        <li>No external servers used</li>
-      </ul>
+    <div class="footer-note">
+      © 2026 SnapRetro. All rights reserved.
     </div>
-
-    <div class="card">
-      <h2>🔒 Storage</h2>
-      <p>All data is stored locally on the device only.</p>
-      <ul>
-        <li>No server storage</li>
-        <li>No uploads</li>
-        <li>No user tracking</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>👶 Children's Privacy</h2>
-      <p>
-        No personal information is collected from children under 13.
-        The app is suitable for general audiences.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>🌍 Third-Party Services</h2>
-      <p>No third-party services are used.</p>
-    </div>
-
-    <div class="card">
-      <h2>🔄 Changes</h2>
-      <p>
-        This policy may be updated. Any changes will appear on this page
-        with a new update date.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>📩 Contact</h2>
-      <p>
-        Email:
-        <a class="email" href="mailto:devolo.studioxd@gmail.com">
-          devolo.studioxd@gmail.com
-        </a>
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>✅ Consent</h2>
-      <p>Using SnapRetro means agreement with this policy.</p>
-    </div>
-
-    <div class="summary">
-      <strong>Summary:</strong>
-      SnapRetro does not collect or store personal data. Everything remains on the device.
-    </div>
-
-    <div class="footer">
-      © 2026 SnapRetro
-    </div>
-
   </div>
 </body>
 </html>
